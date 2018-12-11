@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @grade.name %>
+</p>
+
+<% @sum = 0.0%>
+<p>
+  <strong>Average:</strong>
+  <% @sum = ((@grade.bim1 +  @grade.bim2 +  @grade.bim3 + @grade.bim4) /4).round(1) %>
+  <%= @sum %>
+</p>
+
+<p>
+  <strong>Bim1:</strong>
+  <%= @grade.bim1 %>
+</p>
+
+<p>
+  <strong>Bim2:</strong>
+  <%= @grade.bim2 %>
+</p>
+
+<p>
+  <strong>Bim3:</strong>
+  <%= @grade.bim3 %>
+</p>
+
+<p>
+  <strong>Bim4:</strong>
+  <%= @grade.bim4 %>
+</p>
+
+<%= link_to 'Edit', edit_grade_path(@grade) %> |
+<%= link_to 'Back', grades_path %>

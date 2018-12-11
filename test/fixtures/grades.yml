@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  average: 1.5
+  bim1: 1.5
+  bim2: 1.5
+  bim3: 1.5
+  bim4: 1.5
+
+two:
+  name: MyString
+  average: 1.5
+  bim1: 1.5
+  bim2: 1.5
+  bim3: 1.5
+  bim4: 1.5

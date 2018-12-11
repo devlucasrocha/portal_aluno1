@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Grades</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Average</th>
+      <th>Bim1</th>
+      <th>Bim2</th>
+      <th>Bim3</th>
+      <th>Bim4</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @grades.each do |grade| %>
+      <tr>
+        <td><%= grade.name %></td>
+        <td><%= grade.average %></td>
+        <td><%= grade.bim1 %></td>
+        <td><%= grade.bim2 %></td>
+        <td><%= grade.bim3 %></td>
+        <td><%= grade.bim4 %></td>
+        <td><%= link_to 'Show', grade %></td>
+        <td><%= link_to 'Edit', edit_grade_path(grade) %></td>
+        <td><%= link_to 'Destroy', grade, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Grade', new_grade_path %>
