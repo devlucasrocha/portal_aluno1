@@ -1,5 +1,6 @@
 <p id="notice"><%= notice %></p>
-
+<% @id = params[:id] %>
+<%= @id %>
 <p>
   <strong>Name:</strong>
   <%= @grade.name %>
@@ -12,6 +13,7 @@
   <%= @sum %>
 </p>
 
+<% ActiveRecord::Base.connection.execute("UPDATE GRADES SET AVERAGE = #{@sum} WHERE id=#{@id}") %>
 <p>
   <strong>Bim1:</strong>
   <%= @grade.bim1 %>
