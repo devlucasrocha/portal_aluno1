@@ -10,7 +10,15 @@
   </head>
 
   <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <nav class="navbar navbar-light">
+        <%= image_tag("https://bit.ly/2UK0ZpB", size: "40x40") %>&nbsp;&nbsp;
+        <%= link_to 'Portal Aluno', welcome_index_path, class:"navbar-brand"%>
+    </nav>
+</nav>
+  <div class="container"><br><br>
     <script>$.notify("Conexão estabelecida!", "success");</script>
     <%= yield %>
+    </div>
   </body>
 </html>

@@ -15,4 +15,5 @@
 //= require turbolinks
 //= require jquery
 //= require notify-js-legacy/notify.js
-//= require_tree .
+//= require bootstrap/dist/js/bootstrap
+//= require popper.js/dist/popper
