@@ -1,2 +1,10 @@
 "pt-BR":
   abc: "Olá mundo!"
+  navbar_MSG: "Portal do Aluno"
+  title: "Portal do Aluno"
+  welcome:
+    welcome: "Olá, estudante/professor!"
+    desc: "Este é um site para cadastrar e checar notas escolares"
+    start: "Para começar, clique em um dos botões abaixo"
+    check: "Checar notas"
+    submit: "Cadastrar novas notas"

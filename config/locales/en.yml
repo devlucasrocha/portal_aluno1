@@ -1,2 +1,10 @@
 en:
   abc: "Hello world"
+  navbar_MSG: "Student Portal"
+  title: "Student Portal"
+  welcome:
+    welcome: "Hello, student/professor!"
+    desc: "This is a website to submit and check grades from scholl"
+    start: "To start, click in button below: "
+    check: "Check grades"
+    submit: "Submit new grades"

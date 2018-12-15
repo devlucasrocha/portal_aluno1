@@ -1,8 +1,8 @@
 <div class="jumbotron">
-    <h1 class="display-4">Hello, world!</h1>
-    <p class="lead">This is a website to submit and check grades from scholl</p>
+    <h1 class="display-4"><%= t('welcome.welcome') %></h1>
+    <p class="lead"><%= t('welcome.desc') %></p>
     <hr class="my-4">
-    <p>To start, click in button below: </p>
-    <%= link_to 'Check grades', grades_path, class:"btn btn-primary btn-lg" %>
-    <%= link_to 'Submit new grades', new_grade_path, class:"btn btn-primary btn-lg" %>
+    <p><%= t('welcome.start') %></p>
+    <%= link_to t('welcome.check'), grades_path, class:"btn btn-primary btn-lg" %>
+    <%= link_to t('welcome.submit'), new_grade_path, class:"btn btn-primary btn-lg" %>
 </div>
