@@ -1,11 +1,10 @@
 <nav class="navbar navbar-dark bg-primary">
     <nav class="navbar navbar-light">
-    <%= image_tag("https://img.icons8.com/color/1600/student-female.png", size: "40x40") %>&nbsp;&nbsp;
+    <%= image_tag("https://img.icons8.com/color/1600/student-female.png", size: "50x50") %>&nbsp;&nbsp;
     <%= link_to 'Portal do Aluno', welcome_index_path, class:"navbar-brand" %>
 </nav>
-<select id="mySelect" class="custom-select" style="width:200px">
+<select id="language" class="custom-select" style="width:200px">
     <option selected>Choose your language</option>
     <option value="1">Portuguese</option>
     <option value="2">English</option>
-    <%= link_to "Change", "javascript:function()" %>
 </select>

@@ -1,43 +1,45 @@
 <p id="notice"><%= notice %></p>
 
+<form>
+    <div class="form-group">
+      <strong>Name</strong>
+      <%= text_field_tag nil, @grade.name, class:"form-control", disabled: true %>
+    </div>
+  <% @sum = 0.0%>
 
-<p>
-  <strong>Name:</strong>
-  <%= @grade.name %>
-</p>
+    <div class="form-group">
+      <strong>Average</strong>
+      <% @sum = ((@grade.bim1 +  @grade.bim2 +  @grade.bim3 + @grade.bim4) /4).round(1) %>
+      <%= text_field_tag nil, @sum, class:"form-control", disabled: true %>
+    </div>
 
-<% @sum = 0.0%>
-<p>
-  <strong>Average:</strong>
-  <% @sum = ((@grade.bim1 +  @grade.bim2 +  @grade.bim3 + @grade.bim4) /4).round(1) %>
-  <%= @sum %>
-</p>
+  <% @id = params[:id] %>
+  <% if @sum != @grade.average %> 
+    <% ActiveRecord::Base.connection.execute("UPDATE GRADES SET AVERAGE = #{@sum} WHERE id=#{@id}") %>
+  <% end %>
+  <!-- Apenas atualiza a media se o resultado do @sum for diferente da q esta no banco -->
 
-<% @id = params[:id] %>
-<% if @sum != @grade.average %> 
-  <% ActiveRecord::Base.connection.execute("UPDATE GRADES SET AVERAGE = #{@sum} WHERE id=#{@id}") %>
-<% end %>
-<!-- Apenas atualiza a media se o resultado do @sum for diferente da q esta no banco -->
+  <div class="form-group">
+    <strong>Bim1</strong>
+    <%= text_field_tag nil, @grade.bim1, class:"form-control", disabled: true %>
+  </div>
 
-<p>
-  <strong>Bim1:</strong>
-  <%= @grade.bim1 %>
-</p>
+  <div class="form-group">
+    <strong>Bim2</strong>
+    <%= text_field_tag nil, @grade.bim2, class:"form-control", disabled: true %>
+  </div>
 
-<p>
-  <strong>Bim2:</strong>
-  <%= @grade.bim2 %>
-</p>
+  <div class="form-group">
+    <strong>Bim3</strong>
+    <%= text_field_tag nil, @grade.bim3, class:"form-control", disabled: true %>
+  </div>
 
-<p>
-  <strong>Bim3:</strong>
-  <%= @grade.bim3 %>
-</p>
+  <div class="form-group">
+    <strong>Bim4</strong>
+    <%= text_field_tag nil, @grade.bim4, class:"form-control", disabled: true %>
+  </div>
+</form>
 
-<p>
-  <strong>Bim4:</strong>
-  <%= @grade.bim4 %>
-</p>
-
-<%= link_to 'Edit', edit_grade_path(@grade) %> |
-<%= link_to 'Back', grades_path %>
+<%= link_to 'Edit', edit_grade_path(@grade), class:"btn btn-primary" %> |
+<%= link_to 'Back', grades_path, class:"btn btn-primary" %>
+<br><br><br>
