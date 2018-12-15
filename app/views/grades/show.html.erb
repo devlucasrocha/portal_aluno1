@@ -15,7 +15,7 @@
 
   <% @id = params[:id] %>
   <% if @sum != @grade.average %> 
-    <% ActiveRecord::Base.connection.execute("UPDATE GRADES SET AVERAGE = #{@sum} WHERE id=#{@id}") %>
+    <% ActiveRecord::Base.connection.exec_query("UPDATE GRADES SET AVERAGE = #{@sum} WHERE id=#{@id}") %>
   <% end %>
   <!-- Apenas atualiza a media se o resultado do @sum for diferente da q esta no banco -->
 
