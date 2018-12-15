@@ -13,6 +13,14 @@
   <body>
     <%= render "layouts/navbar" %>
 </nav>
+  <p>
+    <%= link_to "Portuguese", url_for(locale: 'pt-BR') %>
+</p>
+
+<p>
+    <%= link_to "English", url_for(locale: 'en') %>
+</p>
+
   <div class="container"><br><br>
     <%= yield %>
     <!--<script>$.notify("Conexão estabelecida!", "success");</script>-->
