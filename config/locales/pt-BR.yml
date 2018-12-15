@@ -24,3 +24,10 @@
     choose: "Escolha seu idioma"
     portguese: "Português"
     english: "Inglês"
+
+  show:
+    showh1: "Mostrando notas"
+    name: "Nome"
+    average: "Média"
+    edit: "Editar"
+    back: "Voltar"

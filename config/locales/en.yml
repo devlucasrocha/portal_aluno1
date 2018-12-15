@@ -25,3 +25,10 @@ en:
     portguese: "Portuguese"
     english: "English"
 
+  show:
+    showh1: "Showing grades"
+    name: "Name"
+    average: "Average"
+    edit: "Edit"
+    back: "Back"
+

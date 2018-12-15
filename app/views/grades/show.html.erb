@@ -1,14 +1,16 @@
 <p id="notice"><%= notice %></p>
 
+<h1><%= t('show.showh1') %></h1>
+
 <form>
     <div class="form-group">
-      <strong>Name</strong>
+      <strong><%= t('show.name') %></strong>
       <%= text_field_tag nil, @grade.name, class:"form-control", disabled: true %>
     </div>
   <% @sum = 0.0%>
 
     <div class="form-group">
-      <strong>Average</strong>
+      <strong><%= t('show.average') %></strong>
       <% @sum = ((@grade.bim1 +  @grade.bim2 +  @grade.bim3 + @grade.bim4) /4).round(1) %>
       <%= text_field_tag nil, @sum, class:"form-control", disabled: true %>
     </div>
@@ -40,6 +42,6 @@
   </div>
 </form>
 
-<%= link_to 'Edit', edit_grade_path(@grade), class:"btn btn-primary" %> |
-<%= link_to 'Back', grades_path, class:"btn btn-primary" %>
+<%= link_to t('show.edit'), edit_grade_path(@grade), class:"btn btn-primary" %> |
+<%= link_to t('show.back'), grades_path, class:"btn btn-primary" %>
 <br><br><br>
