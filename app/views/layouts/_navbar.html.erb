@@ -4,8 +4,8 @@
     <%= link_to t('navbar_MSG'), welcome_index_path, class:"navbar-brand" %>
 </nav>
 <select id="language" class="custom-select" style="width:200px " onchange="location = this.value;">
-    <option selected>Choose your language</option>
-    <option value="?locale=pt-BR">Portuguse</option>
-    <option value="?locale=en">English</option>
+    <option selected><%= t('select.choose') %></option>
+    <option value="?locale=pt-BR"><%= t('select.portguese') %></option>
+    <option value="?locale=en"><%= t('select.english') %></option>
 </select>
 </nav>

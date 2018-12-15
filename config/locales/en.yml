@@ -19,3 +19,9 @@ en:
       average: "Average"
     
     new: "New Grade"
+
+  select:
+    choose: "Choose your language"
+    portguese: "Portuguese"
+    english: "English"
+

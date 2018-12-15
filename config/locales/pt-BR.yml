@@ -19,3 +19,8 @@
       average: "Média"
     
     new: "Nova nota"
+
+  select:
+    choose: "Escolha seu idioma"
+    portguese: "Português"
+    english: "Inglês"
