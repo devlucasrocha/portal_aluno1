@@ -8,3 +8,14 @@
     start: "Para começar, clique em um dos botões abaixo"
     check: "Checar notas"
     submit: "Cadastrar novas notas"
+  
+  grades:
+    grades: "Notas"
+    show: "Mostrar"
+    edit: "Editar"
+    destroy: "Apagar"
+    table:
+      name: "Nome"
+      average: "Média"
+    
+    new: "Nova nota"

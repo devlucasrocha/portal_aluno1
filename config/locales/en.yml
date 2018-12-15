@@ -8,3 +8,14 @@ en:
     start: "To start, click in button below: "
     check: "Check grades"
     submit: "Submit new grades"
+  
+  grades:
+    grades: "Grades"
+    show: "Show"
+    edit: "Edit"
+    destroy: "Destroy"
+    table:
+      name: "Name"
+      average: "Average"
+    
+    new: "New Grade"

@@ -1,12 +1,12 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Grades</h1>
+<h1><%= t('grades.grades') %></h1>
 
 <table class="table table-hover table-bordered">
   <thead class="thead-light">
     <tr>
-      <th>Name</th>
-      <th>Average</th>
+      <th><%= t('grades.table.name') %></th>
+      <th><%= t('grades.table.average') %></th>
       <th>Bim1</th>
       <th>Bim2</th>
       <th>Bim3</th>
@@ -24,9 +24,9 @@
         <td><%= grade.bim2 %></td>
         <td><%= grade.bim3 %></td>
         <td><%= grade.bim4 %></td>
-        <td><%= link_to 'Show', grade %></td>
-        <td><%= link_to 'Edit', edit_grade_path(grade) %></td>
-        <td><%= link_to 'Destroy', grade, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to t('grades.show'), grade %></td>
+        <td><%= link_to t('grades.edit'), edit_grade_path(grade) %></td>
+        <td><%= link_to t('grades.destroy'), grade, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -34,5 +34,5 @@
 
 <br>
 
-<%= link_to 'New Grade', new_grade_path, class:"btn btn-primary"  %>
+<%= link_to t('grades.new'), new_grade_path, class:"btn btn-primary"  %>
 <br><br><br><br>
