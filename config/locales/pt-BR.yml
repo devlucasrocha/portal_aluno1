@@ -43,3 +43,11 @@
       grade:
         one: "Nota"
         other: "Notas"
+  new:
+    newh1: "Nova nota"
+    name: "Nome"
+    first_grade: "Primeira nota"
+    second_grade: "Segunda nota"
+    third_grade: "Terceira nota"
+    fourth_grade: "Quarta nota"
+    back: "Voltar"

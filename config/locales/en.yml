@@ -43,4 +43,13 @@ en:
       grade:
         one: "Grade"
         other: "Grades"
+  
+  new:
+    newh1: "New Grade"
+    name: "Name"
+    first_grade: "First grade"
+    second_grade: "Second grade"
+    third_grade: "Third grade"
+    fourth_grade: "Fourth grade"
+    back: "Back"
 
