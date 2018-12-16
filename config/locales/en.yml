@@ -31,4 +31,16 @@ en:
     average: "Average"
     edit: "Edit"
     back: "Back"
+  
+  edit:
+    show: "Show"
+    name: "Name"
+    back: "Back"
+    edith1: "Editing Grade"
+    update: "Update grade"
+  activerecord:
+    models:
+      grade:
+        one: "Grade"
+        other: "Grades"
 

@@ -31,3 +31,15 @@
     average: "Média"
     edit: "Editar"
     back: "Voltar"
+
+  edit:
+    edith1: "Editando nota"
+    name: "Nome"
+    show: "Mostrar"
+    back: "Voltar"
+    update: "Atualizar nota"
+  activerecord:
+    models:
+      grade:
+        one: "Nota"
+        other: "Notas"

@@ -1,6 +1,7 @@
-<h1>Editing Grade</h1>
+<br>
+<h1><%= t('edit.edith1') %></h1>
 
 <%= render 'form', grade: @grade %>
 
-<%= link_to 'Show', @grade, class:"btn btn-primary" %> |
-<%= link_to 'Back', grades_path, class:"btn btn-primary" %>
+<%= link_to t('edit.show'), @grade, class:"btn btn-primary" %> |
+<%= link_to t('edit.back'), grades_path, class:"btn btn-primary" %>
