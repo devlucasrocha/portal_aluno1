@@ -11,20 +11,25 @@
   </head>
 
   <body>
-    <%= render "layouts/navbar" %>
-  
-
-  <div class="container">
+    <% @current = params[:controller] + "#" + params[:action]%>
+    <% if @current.to_s != "devise/sessions#new" %>
+      <% @equal = true %>
+      <%= render "layouts/navbar" %>
+      <div class="container">
+      <% else %>
+      <br><br><br><br>
+    <% end %>
     <%= yield %>
-    <!--<script>$.notify("Conexão estabelecida!", "success");</script>-->
-    <%= render "layouts/footer" %>
-    </div>
-    <br>
-    <p style="
-              font-size: 130%;
-              text-align: center;
-              border-radius: 2px;
-              padding: 10px;" class="p-3 mb-2 bg-info text-white">
-              <strong>Hora atual: <%= time_helper() %></strong></p>
-  </body>
+      <% if @equal %>
+        <%= render "layouts/footer" %>
+      </div>
+      <br>
+      <p style="
+                font-size: 130%;
+                text-align: center;
+                border-radius: 2px;
+                padding: 10px;" class="p-3 mb-2 bg-info text-white">
+                <strong>Hora atual: <%= time_helper() %></strong></p>
+    </body>
+    <% end %>
 </html>
