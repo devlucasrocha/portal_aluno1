@@ -1,7 +1,9 @@
 <nav class="navbar navbar-dark bg-primary">
     <nav class="navbar navbar-light">
-    <%= image_tag("https://img.icons8.com/color/1600/student-female.png", size: "50x50") %>&nbsp;&nbsp;
-    <%= link_to t('navbar_MSG'), welcome_index_path, class:"navbar-brand" %>
+    <div title="<%= t('navbar_MSG') %>">
+        <%= image_tag("https://img.icons8.com/color/1600/student-female.png", size: "50x50") %>&nbsp;&nbsp;
+        <%= link_to t('navbar_MSG'), welcome_index_path, class:"navbar-brand" %>
+    </div>
 </nav>
 <select id="language" class="custom-select" style="width:200px " onchange="location = this.value;">
     <option selected><%= t('select.choose') %></option>
