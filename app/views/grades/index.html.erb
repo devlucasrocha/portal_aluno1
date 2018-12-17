@@ -5,6 +5,7 @@
 <table class="table table-hover table-bordered">
   <thead class="thead-light">
     <tr>
+      <th>Id</th>
       <th><%= t('grades.table.name') %></th>
       <th><%= t('grades.table.average') %></th>
       <th>Bim1</th>
@@ -18,6 +19,7 @@
   <tbody>
     <% @grades.each do |grade| %>
       <tr>
+        <td><%= grade.id %></td>
         <td><%= grade.name %></td>
         <td><%= grade.average %></td>
         <td><%= grade.bim1 %></td>
