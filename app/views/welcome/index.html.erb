@@ -7,21 +7,3 @@
     <%= link_to t('welcome.check'), grades_path, class:"btn btn-primary btn-lg" %>
     <%= link_to t('welcome.submit'), new_grade_path, class:"btn btn-primary btn-lg" %>
 </div>
-
-<h3>Valor 1: </h3>
-<%= number_field_tag 'n1', nil %>
-<h3>Valor 2: </h3>
-<%= number_field_tag 'n2', nil %><br><br>
-<%= link_to 'Somar', nil, onclick: 'soma()', class:"btn btn-danger" %>
-<script>
-    const soma = _ => {
-        let n1 = parseInt(document.getElementById('n1').value)
-        let n2 = parseInt(document.getElementById('n2').value)
-        let resu = n1 + n2;
-        if (!!resu) {
-            alert(`${n1} + ${n2} = ${resu}`)
-        } else {
-            alert("Insira um valor")
-        }
-    }
-</script>
