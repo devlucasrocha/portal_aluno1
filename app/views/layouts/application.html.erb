@@ -17,7 +17,9 @@
       <%= render "layouts/navbar" %>
       <div class="container">
       <% else %>
-      <br><br><br><br>
+        <% 4.times do |n| %>
+          <br>
+        <% end %>
     <% end %>
     <%= yield %>
       <% if @login_page %>
