@@ -12,7 +12,7 @@
 
   <body>
     <% @current = params[:controller] + "#" + params[:action]%>
-    <% if @current.to_s != "devise/sessions#new" %>
+    <% if @current != "devise/sessions#new" && @current != "devise/sessions#create"%>
       <% @login_page = true %>
       <%= render "layouts/navbar" %>
       <div class="container">
