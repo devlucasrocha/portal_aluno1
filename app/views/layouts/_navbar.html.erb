@@ -1,4 +1,4 @@
-<nav class="navbar navbar-dark bg-primary">
+<nav class="navbar navbar-dark bg-primary" style="padding: 0px 5px 0px 5px;">
     <nav class="navbar navbar-light">
     <div title="<%= t('navbar_MSG') %>">
         <%= link_to image_tag("https://bit.ly/2UQNtAG", size: "50x50") + t('navbar_MSG'), root_path, class:"navbar-brand" %>
@@ -8,7 +8,7 @@
 <% if professor_signed_in? %>
     <%= link_to('Logout', destroy_professor_session_path, method: :delete, class:"btn btn-danger") %>
 <% else %>
-    <%= link_to('Login', new_professor_session_path, class:"btn btn-danger") %>
+    <%= link_to('Login', new_professor_session_path, class:"btn btn btn-success") %>
 <% end %>
 </div>
 <select id="language" class="custom-select" style="width:200px " onchange="location = this.value;">
