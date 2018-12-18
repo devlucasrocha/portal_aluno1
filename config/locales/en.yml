@@ -4,7 +4,7 @@ en:
   title: "Student Portal"
   welcome:
     welcome: "Hello, student/professor!"
-    desc: "This is a website to submit and check grades from scholl"
+    desc: "This is a website to submit and check grades from school"
     start: "To start, click in button below: "
     check: "Check grades"
     submit: "Submit new grades"
