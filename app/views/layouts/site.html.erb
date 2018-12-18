@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= t('title') %></title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= favicon_link_tag asset_path('favicon.png') %>
+  </head>
+
+  <body>
+    <h1>Layout - SITE</h1>
+    <% @current = params[:controller] + "#" + params[:action]%>
+    <% if @current != "devise/sessions#new" && @current != "devise/sessions#create"%>
+      <% @login_page = true %>
+      <%= render "layouts/navbar" %>
+      <div class="container">
+      <% else %>
+        <% 2.times do |n| %>
+          <br>
+        <% end %>
+    <% end %>
+    <%= yield %>
+      <% if @login_page %>
+        <%= render "layouts/footer" %>
+      </div>
+      <br>
+      <p style="
+                font-size: 130%;
+                text-align: center;
+                border-radius: 2px;
+                padding: 10px;" class="p-3 mb-2 bg-info text-white">
+                <strong>Hora atual: <%= time_helper() %></strong></p>
+    </body>
+    <% end %>
+</html>
