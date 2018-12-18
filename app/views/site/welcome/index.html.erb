@@ -1,4 +1,10 @@
 <br><br>
+<% if professor_signed_in? %>
+<p>Professor logado: <strong><%= current_professor.email %></strong></p>
+<%= link_to 'Fazer logout', destroy_professor_session_path, method: :delete %>
+<% else %>
+<p>Professor NÃO logado</p>
+<% end %>
 <div class="jumbotron">
     <h1 class="display-4"><%= t('welcome.welcome') %></h1>
     <p class="lead"><%= t('welcome.desc') %></p>

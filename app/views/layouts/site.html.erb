@@ -11,7 +11,6 @@
   </head>
 
   <body>
-    <h1>Layout - SITE</h1>
     <% @current = params[:controller] + "#" + params[:action]%>
     <% if @current != "devise/sessions#new" && @current != "devise/sessions#create"%>
       <% @login_page = true %>
