@@ -1,0 +1,12 @@
+"pt-BR":
+  activerecord:
+    models:
+      professor:
+        one: "Professor"
+        other: "Professors"
+    attributes:
+      professor:
+        id: "id"
+        email: "Email"
+        created_at: "Criado em"
+        updated_at: "Atualizado em"
