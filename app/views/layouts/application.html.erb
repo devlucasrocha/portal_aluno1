@@ -13,14 +13,14 @@
   <body>
     <% @current = params[:controller] + "#" + params[:action]%>
     <% if @current.to_s != "devise/sessions#new" %>
-      <% @equal = true %>
+      <% @login_page = true %>
       <%= render "layouts/navbar" %>
       <div class="container">
       <% else %>
       <br><br><br><br>
     <% end %>
     <%= yield %>
-      <% if @equal %>
+      <% if @login_page %>
         <%= render "layouts/footer" %>
       </div>
       <br>

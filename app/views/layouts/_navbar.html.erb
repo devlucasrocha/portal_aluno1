@@ -4,6 +4,7 @@
         <%= link_to image_tag("https://bit.ly/2UQNtAG", size: "50x50") + t('navbar_MSG'), welcome_index_path, class:"navbar-brand" %>
     </div>
 </nav>
+<%= link_to('Login', new_professor_session_path, class:"btn btn-danger") %>
 <select id="language" class="custom-select" style="width:200px " onchange="location = this.value;">
     <option selected><%= t('select.choose') %></option>
     <option value="?locale=pt-BR"><%= t('select.portguese') %></option>
