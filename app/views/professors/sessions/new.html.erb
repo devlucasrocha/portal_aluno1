@@ -7,17 +7,7 @@
   background-color: #d2d2d2;
   border-radius: 30px;
   padding: 20px;" class="img-fluid">
-  <div id='div_close' data-root-path="<%= root_path %>">
-    <p style="text-align: right;"><%= link_to( image_tag('https://bit.ly/2SQbfea', size:'20x20'), nil, onclick: 'close_confirm()', title:"Close") %></p>
-    <script>
-      function close_confirm() {
-        const confirmed = confirm("Do you really wanna leave?")
-        if (confirmed) {
-          location.href = $('#div_close').data('root-path');
-        }
-      }
-    </script>
-  </div>
+    <%= render 'buttonToClose' %>
     <h2>Log in as professor</h2>
     <% flash.each do |key, value| %>
       <div class="flash <%= key %>"><%= value %></div>
