@@ -16,4 +16,4 @@
 //= require jquery
 //= require notify-js-legacy/notify.js
 //= require bootstrap/dist/js/bootstrap
-//= require popper.js/dist/popper
+//= require popper.js/dist/umd/popper.min.js
