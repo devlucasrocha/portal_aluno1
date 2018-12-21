@@ -53,5 +53,6 @@ en:
     fourth_grade: "Fourth grade"
     back: "Back"
 
+  js_close: "Do you really want to leave?"
   devise_page:
     login: "Log in as professor"

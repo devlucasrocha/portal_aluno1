@@ -52,5 +52,6 @@
     fourth_grade: "Quarta nota"
     back: "Voltar"
 
+  js_close: "Você realmente deseja sair?"
   devise_page:
     login: "Logar como professor"

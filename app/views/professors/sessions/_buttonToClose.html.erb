@@ -2,7 +2,7 @@
     <p style="text-align: right;"><%= link_to( image_tag('https://bit.ly/2EysixE' ), nil, onclick: 'close_confirm()', title:"Close") %></p>
     <script>
         function close_confirm() {
-            const confirmed = confirm("Do you really wanna leave?")
+            const confirmed = confirm("<%= t('js_close') %>")
             if (confirmed) {
                 location.href = $('#div_close').data('root-path');
             }
