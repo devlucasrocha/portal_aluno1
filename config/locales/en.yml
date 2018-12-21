@@ -1,6 +1,8 @@
 en:
   abc: "Hello world"
   navbar_MSG: "Student Portal"
+  navbar_login: "Log in"
+  navbar_logout: "Log out"
   title: "Student Portal"
   welcome:
     welcome: "Hello, student/professor!"
@@ -56,3 +58,11 @@ en:
   js_close: "Do you really want to leave?"
   devise_page:
     login: "Log in as professor"
+    password: "Password"
+    remember_me: "Remember me"
+    sign_up: "New account"
+    forgot_password: "Forgot your password?"
+    characters_minimum: "characters minimum"
+    password_confirmation: "Password confirmation"
+    sign_up_confirm: "Create account"
+    password_instructions: "Send reset password instructions"

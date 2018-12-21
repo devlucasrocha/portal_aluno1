@@ -1,6 +1,8 @@
 "pt-BR":
   abc: "Olá mundo!"
   navbar_MSG: "Portal do Aluno"
+  navbar_login: "Entrar"
+  navbar_logout: "Sair"
   title: "Portal do Aluno"
   welcome:
     welcome: "Olá, estudante/professor!"
@@ -55,3 +57,11 @@
   js_close: "Você realmente deseja sair?"
   devise_page:
     login: "Logar como professor"
+    password: "Senha"
+    remember_me: "Lembre-se de mim"
+    sign_up: "Criar nova conta"
+    forgot_password: "Esqueceu sua senha?"
+    characters_minimum: "caracteres mínimos"
+    password_confirmation: "Confirmação da senha"
+    sign_up_confirm: "Criar conta"
+    password_instructions: "Enviar instruções para recuperar senha"
