@@ -8,7 +8,7 @@
   border-radius: 30px;
   padding: 20px;" class="img-fluid">
     <%= render 'buttonToClose' %>
-    <h2>Log in as professor</h2>
+    <h2><%= t("devise_page.login") %></h2>
     <% flash.each do |key, value| %>
       <div class="flash <%= key %>"><%= value %></div>
     <% end %>

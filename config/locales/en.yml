@@ -53,3 +53,5 @@ en:
     fourth_grade: "Fourth grade"
     back: "Back"
 
+  devise_page:
+    login: "Log in as professor"

@@ -1,4 +1,13 @@
 <br>
+<div style="
+  margin: auto;
+  width: 50%;
+  box-shadow: 5px 10px 8px #888888;
+  border-radius: 5px;
+  background-color: #d2d2d2;
+  border-radius: 30px;
+  padding: 20px;" class="img-fluid">
+    <%= render 'buttonToClose' %>
 <h2>Sign up</h2>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
@@ -36,3 +45,4 @@
 <form>
 <br>
 <%= render "professors/shared/links" %>
+</div>

@@ -51,3 +51,6 @@
     third_grade: "Terceira nota"
     fourth_grade: "Quarta nota"
     back: "Voltar"
+
+  devise_page:
+    login: "Logar como professor"
