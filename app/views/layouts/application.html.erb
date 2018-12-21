@@ -12,9 +12,13 @@
 
   <body>
     <% @current = params[:controller] + "#" + params[:action]%>
-    <h1><%= @current %></h1>
-    <% if @current != "devise/sessions#new" && @current != "devise/sessions#create"%>
-      <% @login_page = true %>
+    <% @valid = 
+    @current != "devise/sessions#new" && 
+    @current != "devise/sessions#create" &&
+    @current != "devise/registrations#new" && 
+    @current != "devise/passwords#new" %>
+    <% if @valid %>
+      <% @devise_page = true %>
       <%= render "layouts/navbar" %>
       <div class="container">
       <% else %>
@@ -23,7 +27,7 @@
         <% end %>
     <% end %>
     <%= yield %>
-      <% if @login_page %>
+      <% if @devise_page %>
         <%= render "layouts/content" %>
       </div>
       <br>
